@@ -38,13 +38,13 @@ jobs:
               cmd: install
             
       - name: yarn build command
-        run: yarn build
+        run:  yarn build
         
       - name: install surge
-        run: npm install -g surge
+        run:  npm install -g surge
         
       - name: deploy on surge
-        run: surge ./build shazi2.surge.sh ${{secrets.SURGE_TOKEN}}
+        run:  surge ./build shazi2.surge.sh ${{secrets.SURGE_TOKEN}}
               
             
       
